@@ -1,0 +1,104 @@
+<div class="container">  
+  <div id="slider-main" style="width: 940px;">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+        <div class="active item slide1 row">
+          <div class="text span5 active" style="margin-left: 100px; width: 460px;">
+            <h3>Дашунька - копирайтер.</h3>
+            <p>Много лет на рынке копирайтинга. Копирайтинг на украинском, русском и английском языках</p>
+            <p><a href="about.php" class="btn">Узнать больше &raquo;</a></p>
+          </div>
+          <div class="image span4" style="margin-left:0px; width:350px;">
+            <%= image_tag("copywriting.jpg", alt: "Copywriting", class: "border-img" )%>
+          </div>
+        </div>
+
+        <div class="item slide1 row">
+          <div class="text span5 active" style="margin-left: 100px; width: 460px;">
+            <h3>Тексты Дашуньки приятно читать.</h3>
+            <p>Очень приятно всем читать! Все читают и всем нравится!.</p>
+            <p><a href="about.php" class="btn">Узнать больше &raquo;</a></p>
+          </div>
+          <div class="image span4" style="margin-left:0px; width:350px;">
+            <%= image_tag("reading.jpg", alt: "Reading", class: "border-img" )%>
+          </div>
+        </div>
+
+        <div class="item slide1 row">
+          <div class="text span5 active" style="margin-left: 100px; width: 460px;">
+            <h3>Уникальность гарантирована</h3>
+            <p>Тексты Дашеньки всегда уникальны. Об этом говорят все сервисы проверки уникальностиы</p>
+            <p><a href="about.php" class="btn">Узнать больше &raquo;</a></p>
+          </div>
+          <div class="image span4" style="margin-left:0px; width:350px;">
+            <%= image_tag("uniq_text.jpg", alt: "Reading", class: "border-img" )%>
+          </div>
+        </div>
+
+      </div>
+    
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container offer"> 
+  
+  <h2 class="separator tagline"><span>Услуги</span></h2>
+  <div class="row">
+      <div class="span3">
+        <p class="icon-container"><span class="icon-edit round"></span></p>
+        <h3>Статьи, рассылки</h3>
+        <p>Разные статьи там, рекламные, для поисковиков, клиенты, рассылки, почта, редактирование текстов любой сложности, серии статей</p>
+      </div>
+      <div class="span3">
+        <p class="icon-container"><span class="icon-thumbs-up round"></span></p>
+        <h3>Имидж копирайтинг</h3>
+        <p> Создание рекламной концепции, создание текстовой формы для выражения концепции, создание рекламных слоганов</p>
+      </div>
+      <div class="span3">
+        <p class="icon-container"><span class="icon-search round"></span></p>
+        <h3>SEO-копирайтинг</h3>
+        <p>Продвижение сайта в поисковых системах, маркетинг и реклама продаваемого товара или услуги</p>
+      </div>
+    </div>
+
+  <h2 class="separator tagline"><span>Последние работы</span></h2>
+</div>
+  <footer id="main-footer">
+    <div class="widgets">
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+            <h4><span class="icon-user"></span> Обо мне </h4>
+            <p>Я Дашунечка. Я люблю петь и танцевать, люблю собачек. Люблю читать, писать, веселится и математику. Напишите мне и мы сделаем вместе что-то полезное.</p>
+          </div>
+          <div class="span3">
+            <h4><span class="icon-tag"></span> Последние работы</h4>
+            <p><a href="#">Выстрел из подводного ружья в саду золотых масок</a><br />
+            <small><span class="icon-calendar"></span> 14/08/2014</small></p>
+            <p><a href="#">Моя любимая книга</a><br />
+            <small><span class="icon-calendar"></span> 08/08/2014</small></p>
+            <p><a href="#">Конституция России в таблицах и схемах</a><br />
+            <small><span class="icon-calendar"></span> 05/08/2014</small></p>
+          </div>
+          <div class="span3">
+            <h4><span class="icon-plus"></span> Свяжитесь со мной</h4>
+            <address>
+              <p><span class="icon-map-marker"></span> 6 Плеханова, Киев, Украина</p>
+              <p><span class="icon-envelope"></span> <a href="#">daria07@mail.ru</a></p>
+              <p><span class="icon-phone"></span> (098) 312-08-13</p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<%= render '/refinery/content_page' %>

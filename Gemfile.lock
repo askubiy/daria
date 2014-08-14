@@ -74,7 +74,7 @@ GEM
     mime-types (1.25.1)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
-    pg (0.14.1)
+    pg (0.17.1)
     polyglot (0.3.5)
     rack (1.4.5)
     rack-cache (1.2)
@@ -173,7 +173,11 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     truncate_html (0.9.2)
-    tzinfo (0.3.40)
+    twitter-bootstrap-rails (2.2.4)
+      actionpack (>= 3.1)
+      execjs
+      railties (>= 3.1)
+    tzinfo (0.3.41)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -193,4 +197,5 @@ DEPENDENCIES
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
   sass-rails (~> 3.2.3)
+  twitter-bootstrap-rails
   uglifier (>= 1.0.3)

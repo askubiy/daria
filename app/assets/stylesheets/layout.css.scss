@@ -1,11 +1,54 @@
 body {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 16px;
-  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body * {
+  line-height: 1.5;
+}
+
+footer#main-footer {
+  display: block;
+  margin-top: 20px;
+}
+
+footer .widgets {
+  background: image-url('grid_light.png');;
+  border-top: 1px solid #eee;
+  padding: 20px 0; }
+ 
+footer .copy-contact {
+  background: url('images/grid_dark.png');
+  color: #eee !important;
+  padding: 20px 0 10px;
+  border-top: 1px #888 solid; }
+ 
+  footer .copy-contact a:link, footer .copy-contact a:visited { color: #ccc; }  
+
+
+.carousel-control.left {
+  background: image-url('left-arrow.png');
+  display: inline-block;
+  width: 39px;
+  height: 50px; 
+  padding: 0;
+}
+ 
+.carousel-control.right {
+  background: image-url('right-arrow.png');
+  display: inline-block;
+  width: 39px;
+  height: 50px;
+  padding: 0;
+}
+
+.border-img {
+  border: 0;
+  padding: 0;
 }
 
 h1, h2, h3 {
   margin-top: 0;
+  color: #555;
 }
 
 a {
@@ -16,35 +59,128 @@ a {
   display: none;
 }
 
+.container {
+  width: 940px;
+  padding: 10px 100px;
+}
+
+h2.tagline {
+  margin: 0 0 20px;
+}
+
+h2.separator span {
+  font-size: 18px;
+  color: #666;
+  font-weight: 400;
+  font-style: italic;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  top: 14px;
+  padding: 0 20px;
+}
+
+h2.separator {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  margin: 20px 0 30px;
+}
+
+.offer .row {
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
+.icon-container {
+  width: 270px;
+  text-align: center;
+  margin-left: 80px;
+}
+
+.offer h3 {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.round {
+  background-color: #70ccd8;
+  border-radius: 300px;
+  padding: 15px 20px 10px;
+  line-height: 1;
+  color: #fff;
+  font-size: 60px;
+  &:hover {
+    -webkit-transition: background 600ms ease;
+    -moz-transition: background 600ms ease;
+    -ms-transition: background 600ms ease;
+    -o-transition: background 600ms ease;
+    transition: background 600ms ease;
+    background: #e069a9;
+  }
+}
+
 header {
-  background-color: #000;
-  background: -webkit-gradient(linear, left top, left bottom, from(#555), to(#222));
-  background: -moz-linear-gradient(top,  #555, #222);
-  color: #FFF;
+  color: #000;
   font-weight: bold;
   position: relative;
-  padding: 15px 100px;
+  .menu-container {
+    background: image-url('grid.png');
+    padding:12px;
+    a {
+      color: #666;
+      font-size: 14px;
+      font-weight: normal;
+      text-decoration: none;
+      padding: 14px;
+    }
+    a:hover {
+      color: #222;
+      text-decoration: none;
+    }
+  }
+  .container {
+    width: 940px;
+    padding: 10px 100px;
+    h1#site-name {
+      font-family: 'PT Sans', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1;
+      color: #444;
+      margin: 40px 0 0;
+      font-size: 48px;
+    }
+    a {
+      color: #000;
+      font-weight: normal;
+      font-family: 'PT Sans', sans-serif;
+      text-decoration: none;
+      padding: 14px;
+    }
+    a:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
   #logo {
     margin: 0;
     font-size: 24px;
   }
-  a {
-    color: #FFF;
-    text-decoration: none;
-  }
   ul {
-    position: absolute;
-    right: 100px;
-    top: 18px;
+    text-align: center;
+    width: 266px;
     list-style: none;
-    margin: 0;
+    margin: auto;
     li {
       float: left;
-      padding: 2px 10px;
-      border-right: solid 2px #6F6F6F;
-      &.last {
-        border-right: none;
-      }
+      padding: 2px 0px;
+    }
+    li:after {
+      content: '•';
+      color: #aaa;
+    }
+    li:last-child:after { 
+      content: '';
     }
   }
 }
@@ -72,6 +208,16 @@ header {
   }
 }
 
+a {
+  padding: 3px 0;
+  -o-transition: 300ms;
+  -ms-transition: 300ms;
+  -moz-transition: 300ms;
+  -webkit-transition: 300ms;
+  transition: 300ms; /* ...and now for the proper property */}
+ 
+  a:hover { text-decoration: none; }
+
 #body_content {
   position: relative;
   #body {
@@ -94,7 +240,6 @@ header {
 
 footer {
   font-size: 12px;
-  color: #999;
-  text-align: center;
+  color: #000;
   clear: both;
 }
