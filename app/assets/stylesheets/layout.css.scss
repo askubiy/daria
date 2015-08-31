@@ -2,6 +2,90 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+.menu-container li ul {
+  background: rgba(0,0,0,.65) !important;
+  display: block;
+  list-style: none;
+  border: #666 1px solid;
+  position: absolute;
+  padding: 5px;
+  margin: -1px 0 0;
+  width: 150px;
+  z-index: 99;
+  font-size: 1em;
+  text-align: left !important;
+  left: -9999px; /* Hide off-screen when not needed (this is more accessible than display:none) */ }
+ 
+  .menu-container li ul li {
+    display: block !important;
+    margin: 0;
+    padding: 5px 0;
+    font-weight: 400; }
+ 
+  .menu-container li ul a:link, .menu-container li ul a:visited {
+    padding: 2px 0;
+    color: #fff; }
+ 
+  .menu-container li ul li:after { content: ''; }
+ 
+.menu-container ul ul li:hover > ul {
+  left: 170px;
+  margin-top: -20px; }
+ 
+.menu-container ul li:hover > ul { left: auto; }
+ 
+.menu-container li:hover ul a {
+  text-decoration: none; /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+  color: #fff; }
+ 
+.menu-container li:hover ul li a:hover {
+  background: none; /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+  color: #e069a9; }
+
+#contact {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  z-index: 1; }
+ 
+  #contact ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+ 
+  #contact li {
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative; }
+ 
+    #contact li.search .info { padding: 15px 10px; }
+ 
+    #contact li .info a { border-radius: 0; }
+ 
+    #contact li a, #contact button.btn-link {
+      background: #a586c5;
+      padding: 10px;
+      border-radius: 0 5px 5px 0;
+      text-decoration: none;
+      color: #fff;
+      border: 0;
+      line-height:1;}
+ 
+  #contact button.btn-link {
+    position: relative;
+    top: -1px;
+    padding: 13px 10px; }
+ 
+  #contact input { margin-bottom: 4px; }
+ 
+  #contact li .info {
+    background: #a586c5;
+    color: #fff; }
+ 
+  #contact a span { color: #fff; }
+ 
+#content a:link, #contact a:visited { color: #fff; }
+
 #receptacle {
   margin-left: -20px;
   .span2 {
@@ -20,7 +104,7 @@ footer#main-footer {
 }
 
 footer .widgets {
-  background: image-url('grid_light.png');;
+  background: image-url('grid_light.png');
   border-top: 1px solid #eee;
   padding: 20px 0; }
  
@@ -193,7 +277,7 @@ header {
   }
   ul {
     text-align: center;
-    width: 266px;
+    width: 350px;
     list-style: none;
     margin: auto;
     li {
@@ -267,4 +351,25 @@ footer {
   font-size: 12px;
   color: #000;
   clear: both;
+}
+
+footer .widgets {
+  background: image-url('grid_light.png');
+  border-top: 1px solid #eee;
+  padding: 20px 0; }
+ 
+footer .copy-contact {
+  background: image-url('grid_dark.png');
+  color: #eee !important;
+  padding: 20px 0 10px;
+  border-top: 1px #888 solid; }
+ 
+footer .copy-contact a:link, footer .copy-contact a:visited { color: #ccc; }
+
+footer#main-footer .social {
+  text-align: right;
+  font-size: 250%; }
+
+.span5 {
+  width: 450px;
 }
